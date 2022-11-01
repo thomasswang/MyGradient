@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+/* navbar */
+header {
+    padding: 20px;
+    height: 18vh;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: #131313;
+}
+
+ul,
+li {
+    display: inline-block;
+}
+
+li {
+    margin: 0 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    margin: 0 6px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+nav li a:hover {
+    color: #9518fc;
+    transition: all 0.3s ease;
+}
+
+button {
+    border-style: none;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.logo {
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: 5%;
+}
+
+.signup-btn {
+    font-size: 1.2rem;
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    padding: 20px 60px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 0;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+    margin-right: 0;
+}
+
+.signup-btn::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+.signup-btn:hover::after {
+    width: 100%;
+    z-index: -1;
+}
+
+a .signup-btn {
+    position: relative;
+    z-index: 1;
+    color: #000;
+}
+
+/* home */
+.home {
+    height: 100vh;
+    background-color: #000;
+    width: 100%;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-heading {
+    font-size: 100px;
+    color: #fff;
+    padding-top: 12%;
+    padding-bottom: 3%;
+}
+
+.home-heading span {
+    background: #ee0979; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -mo-text-fill-color: transparent;
+}
+
+.home-desc {
+    padding-bottom: 3%;
+    font-size: 60px;
+    background: #da22ff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #9114ff, #da22ff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8f0eff, #da22ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.highlight {
+    border-bottom: 4px solid rgb(132, 0, 255);
+}
+
+.explore {
+    font-size: 1.8rem;
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    padding: 30px 100px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 0;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+    margin-right: 2.6rem;
+}
+
+.explore::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+.explore:hover::after {
+    width: 100%;
+    z-index: -1;
+}
+
+a .explore {
+    position: relative;
+    color: #000;
+    z-index: 1;
+}
+
+/* about */
+.about {
+    height: 100vh;
+    background-color: blue;
+    width: 100%;
+}
+.services {
+    height: 100vh;
+    background-color: violet;
+}
+.signup {
+    height: 100vh;
+    background-color: yellow;
+}
