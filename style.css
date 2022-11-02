@@ -16,9 +16,8 @@ header {
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    display: flex;
-    justify-content: space-between;
     background-color: #131313;
+    z-index: 999;
 }
 
 ul,
@@ -190,12 +189,108 @@ a .explore {
     height: 100vh;
     background-color: blue;
     width: 100%;
+    padding-top: 18vh;
+    background-color: #000;
 }
+
+.about-container ul {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.main-img-card {
+    position: relative;
+    font-size: 5rem;
+    text-align: center;
+    margin: 10px;
+    height: 350px;
+    width: 350px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-image: linear-gradient(to right, #00dbde, #fc00ff 100%);
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-container h1 {
+    font-size: 2rem;
+    background-color: #fe3b6f;
+    background-image: linear-gradient(to top #ff087b 0%, #ed1e52 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.about-container h2 {
+    font-size: 4rem;
+    background: #ff8177; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #9114ff, #da22ff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8f0eff, #da22ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.about-btn {
+    font-size: 1.2rem;
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    padding: 20px 60px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 0;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+    margin-right: 0;
+}
+
+.about-btn::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+.about-btn:hover::after {
+    width: 100%;
+    z-index: -1;
+}
+
+a .about-btn {
+    position: relative;
+    z-index: 1;
+    color: #000;
+}
+
 .services {
     height: 100vh;
     background-color: violet;
+    padding-top: 18vh;
+    width: 100%;
 }
 .signup {
     height: 100vh;
+    padding-top: 18vh;
     background-color: yellow;
+    width: 100%;
 }
