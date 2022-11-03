@@ -191,9 +191,6 @@ a .explore {
     width: 100%;
     padding-top: 18vh;
     background-color: #000;
-}
-
-.about-container ul {
     justify-content: center;
     display: flex;
     align-items: center;
@@ -204,7 +201,6 @@ a .explore {
     position: relative;
     font-size: 5rem;
     text-align: center;
-    margin: 10px;
     height: 350px;
     width: 350px;
     border-radius: 4px;
