@@ -193,17 +193,17 @@ a .explore {
     background-color: #000;
 }
 
-.about-container {
+.about-container ul {
+    height: 82vh;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
-    justify-items: center;
+    align-items: center;
 }
 
 .main-img-card {
-    margin: 10px;
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 350px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -214,8 +214,14 @@ a .explore {
     font-size: 4rem;
 }
 
+.about-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
 .about-content h1 {
-    font-size: 2rem;
+    font-size: 5rem;
     background-color: #fe3b6f;
     background-image: linear-gradient(to top #ff087b 0%, #ed1e52 100%);
     background-size: 100%;
@@ -224,10 +230,11 @@ a .explore {
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     text-transform: uppercase;
+    margin-bottom: 25px;
 }
 
 .about-content h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     background: #ff8177;
     background: -webkit-linear-gradient(to right, #9114ff, #da22ff);
     background: linear-gradient(to right, #8f0eff, #da22ff);
@@ -239,7 +246,8 @@ a .explore {
 }
 
 .about-content p {
-    font-size: 1.2rem;
+    margin: 1rem 0;
+    font-size: 1.5rem;
     color: #fff;
 }
 
