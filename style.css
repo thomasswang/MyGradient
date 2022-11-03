@@ -191,31 +191,30 @@ a .explore {
     width: 100%;
     padding-top: 18vh;
     background-color: #000;
-    justify-content: center;
+}
+
+.about-container {
     display: flex;
     align-items: center;
-    align-content: center;
+    justify-content: center;
+    justify-items: center;
 }
 
 .main-img-card {
-    position: relative;
-    font-size: 5rem;
-    text-align: center;
-    height: 350px;
-    width: 350px;
+    margin: 10px;
+    height: 300px;
+    width: 300px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background-image: linear-gradient(to right, #00dbde, #fc00ff 100%);
-}
-
-.about-content {
+    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
     text-align: center;
+    font-size: 4rem;
 }
 
-.about-container h1 {
+.about-content h1 {
     font-size: 2rem;
     background-color: #fe3b6f;
     background-image: linear-gradient(to top #ff087b 0%, #ed1e52 100%);
@@ -225,19 +224,23 @@ a .explore {
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     text-transform: uppercase;
-    margin-bottom: 32px;
 }
 
-.about-container h2 {
+.about-content h2 {
     font-size: 4rem;
-    background: #ff8177; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #9114ff, #da22ff); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #8f0eff, #da22ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ff8177;
+    background: -webkit-linear-gradient(to right, #9114ff, #da22ff);
+    background: linear-gradient(to right, #8f0eff, #da22ff);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    color: #fff;
 }
 
 .about-btn {
