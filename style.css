@@ -200,7 +200,7 @@ a .explore {
     align-items: center;
 }
 
-.main-img-card {
+.about-img-card {
     height: 350px;
     width: 350px;
     border-radius: 4px;
@@ -329,11 +329,17 @@ a .about-btn {
 .services-wrapper h2 {
     margin-bottom: 20px;
     cursor: pointer;
+    color: #fff;
 }
 
 .services-wrapper p {
     margin-top: 10px;
     cursor: pointer;
+    color: #fff;
+}
+
+.services-wrapper a {
+    text-decoration: none;
 }
 
 .services-card1 {
@@ -345,7 +351,6 @@ a .about-btn {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #fff;
     background-image: linear-gradient(-225deg, #00dbde 0%, #fc00ff 100%);
     transition: 0.3s ease-in;
     text-align: center;
@@ -360,9 +365,9 @@ a .about-btn {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #fff;
     background: #1fa2ff;
-    background: linear-gradient(-225deg, #a6ffcb, #12d8fa, #1fa2ff);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(-225deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
     transition: 0.3s ease-in;
     text-align: center;
 }
@@ -376,7 +381,6 @@ a .about-btn {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #fff;
     background: #1fa2ff;
     background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
     transition: 0.3s ease-in;
@@ -391,7 +395,6 @@ a .about-btn {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #fff;
     background: #1fa2ff;
     background: rgb(34, 193, 195);
     background: linear-gradient(-225deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
@@ -439,15 +442,61 @@ a .about-btn {
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
-.back {
+.signup-container1 {
+}
+
+.signup-container1 h1 {
+    background: #ff512f;
+    background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
+    background: linear-gradient(to right, #dd2476, #ff512f);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 3rem;
+    font-size: 4rem;
+}
+
+.signup-img-card {
+    height: 300px;
+    width: 300px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background: #ff512f;
+    background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
+    background: linear-gradient(to right, #dd2476, #ff512f);
+    text-align: center;
+    font-size: 4rem;
+}
+
+.signup-container2 {
+    display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    display: flex;
-    width: 800px;
-    height: 200px;
-    background-color: #231557;
+}
+
+.signup-content h2 {
+    font-size: 3rem;
+    background: #ff8177;
+    background: -webkit-linear-gradient(to right, #9114ff, #da22ff);
+    background: linear-gradient(to right, #8f0eff, #da22ff);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.signup-content p {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    color: #fff;
 }
