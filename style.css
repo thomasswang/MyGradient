@@ -295,9 +295,17 @@ a .about-btn {
     background-color: violet;
     padding-top: 18vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .services-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .services-container h1 {
@@ -310,17 +318,14 @@ a .about-btn {
     -moz-text-fill-color: transparent;
     margin-bottom: 3rem;
     font-size: 2.5rem;
-    text-align: center;
 }
 
 .services-wrapper {
-    width: 100%;
-    height: 100vh;
-    background-color: blue;
+    align-content: center;
+    align-items: center;
     justify-content: center;
     display: flex;
 }
-
 .services-card1 {
     margin: 10px;
     height: 250px;
@@ -330,14 +335,82 @@ a .about-btn {
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    background-image: linear-gradient(-225deg, #00dbde 0%, #fc00ff 100%);
     transition: 0.3s ease-in;
     text-align: center;
 }
 
+.services-card2 {
+    margin: 10px;
+    height: 250px;
+    width: 250px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background: #1fa2ff;
+    background: linear-gradient(-225deg, #a6ffcb, #12d8fa, #1fa2ff);
+    transition: 0.3s ease-in;
+    text-align: center;
+}
+
+.services-card3 {
+    margin: 10px;
+    height: 250px;
+    width: 250px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background: #1fa2ff;
+    background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+    transition: 0.3s ease-in;
+    text-align: center;
+}
+.services-card4 {
+    margin: 10px;
+    height: 250px;
+    width: 250px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background: #1fa2ff;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(-225deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    transition: 0.3s ease-in;
+    text-align: center;
+}
+
+.services-wrapper button {
+    margin-top: 16px;
+    background-color: #fff;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    float: right;
+}
+
+/* singup */
 .signup {
     height: 100vh;
     padding-top: 18vh;
     background-color: yellow;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.back {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    width: 800px;
+    height: 200px;
+    background-color: #231557;
 }
