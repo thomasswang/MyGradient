@@ -317,81 +317,97 @@ a .about-btn {
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     margin-bottom: 3rem;
-    font-size: 2.5rem;
+    font-size: 4rem;
 }
 
 .services-wrapper {
-    align-content: center;
+    display: flex;
+    align-items: center;
     align-items: center;
     justify-content: center;
-    display: flex;
 }
+
+.services-wrapper h2 {
+    margin-bottom: 20px;
+}
+
+.services-wrapper p {
+    margin-top: 10px;
+}
+
 .services-card1 {
     margin: 10px;
-    height: 250px;
+    height: 300px;
     width: 250px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     color: #fff;
     background-image: linear-gradient(-225deg, #00dbde 0%, #fc00ff 100%);
     transition: 0.3s ease-in;
     text-align: center;
+    cursor: pointer;
 }
 
 .services-card2 {
     margin: 10px;
-    height: 250px;
+    height: 300px;
     width: 250px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     color: #fff;
     background: #1fa2ff;
     background: linear-gradient(-225deg, #a6ffcb, #12d8fa, #1fa2ff);
     transition: 0.3s ease-in;
     text-align: center;
+    cursor: pointer;
 }
 
 .services-card3 {
     margin: 10px;
-    height: 250px;
+    height: 300px;
     width: 250px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     color: #fff;
     background: #1fa2ff;
     background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
     transition: 0.3s ease-in;
     text-align: center;
+    cursor: pointer;
 }
 .services-card4 {
     margin: 10px;
-    height: 250px;
+    height: 300px;
     width: 250px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     color: #fff;
     background: #1fa2ff;
     background: rgb(34, 193, 195);
     background: linear-gradient(-225deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
     transition: 0.3s ease-in;
     text-align: center;
+    cursor: pointer;
 }
 
 .services-wrapper button {
-    margin-top: 16px;
+    margin-top: 40px;
     background-color: #fff;
     width: 150px;
     height: 50px;
     border-radius: 5px;
-    float: right;
 }
 
 /* singup */
