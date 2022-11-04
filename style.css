@@ -54,7 +54,6 @@ button {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 3rem;
-    text-transform: uppercase;
     font-weight: bold;
     margin-right: auto;
     margin-left: 5%;
@@ -292,7 +291,7 @@ a .about-btn {
 /* Services */
 .services {
     height: 100vh;
-    background-color: violet;
+    background-color: #000;
     padding-top: 18vh;
     width: 100%;
     display: flex;
@@ -302,7 +301,10 @@ a .about-btn {
 }
 
 .services-container {
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .services-container h1 {
@@ -407,29 +409,25 @@ a .about-btn {
 
 .services-card1:hover {
     transition: 0.3s ease-in;
-    height: 320px;
-    width: 270px;
+    transform: scale(1.075);
     cursor: pointer;
 }
 
 .services-card2:hover {
     transition: 0.3s ease-in;
-    height: 320px;
-    width: 270px;
+    transform: scale(1.075);
     cursor: pointer;
 }
 
 .services-card3:hover {
     transition: 0.3s ease-in;
-    height: 320px;
-    width: 270px;
+    transform: scale(1.075);
     cursor: pointer;
 }
 
 .services-card4:hover {
     transition: 0.3s ease-in;
-    height: 320px;
-    width: 270px;
+    transform: scale(1.075);
     cursor: pointer;
 }
 
