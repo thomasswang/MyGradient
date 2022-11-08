@@ -221,8 +221,8 @@ a .explore {
 
 .about-content h1 {
     font-size: 5rem;
-    background-color: #fe3b6f;
-    background-image: linear-gradient(to top #ff087b 0%, #ed1e52 100%);
+    background-color: #ff8177;
+    background-image: linear-gradient(to right, #ff0844 0%, #f7673c 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -474,8 +474,8 @@ a .about-btn {
 
 .signup-content h1 {
     font-size: 5rem;
-    background-color: #fe3b6f;
-    background-image: linear-gradient(to top #ff087b 0%, #ed1e52 100%);
+    background-color: #ff8177;
+    background-image: linear-gradient(to right, #ff0844 0%, #f7673c 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -539,4 +539,33 @@ a .signup-btn {
     position: relative;
     z-index: 1;
     color: #000;
+}
+
+/* Footer */
+.footer-container {
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+}
+
+.footer-container ul {
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+}
+
+.footer-container ul a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+    margin-bottom: 6px;
+}
+
+.footer-container ul h2 {
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 30px;
 }
