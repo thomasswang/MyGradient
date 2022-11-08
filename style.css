@@ -434,37 +434,26 @@ a .about-btn {
     cursor: pointer;
 }
 
-/* singup */
+/* Sign Up */
 .signup {
     height: 100vh;
-    padding-top: 18vh;
-    background-color: yellow;
+    background-color: blue;
     width: 100%;
+    padding-top: 18vh;
+    background-color: #000;
+}
+
+.signup-container ul {
+    height: 82vh;
     display: flex;
     flex-direction: row;
-    text-align: center;
     justify-content: center;
-}
-
-.signup-container1 {
-}
-
-.signup-container1 h1 {
-    background: #ff512f;
-    background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
-    background: linear-gradient(to right, #dd2476, #ff512f);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    margin-bottom: 3rem;
-    font-size: 4rem;
+    align-items: center;
 }
 
 .signup-img-card {
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 350px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -477,10 +466,23 @@ a .about-btn {
     font-size: 4rem;
 }
 
-.signup-container2 {
+.signup-content {
+    text-align: center;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+}
+
+.signup-content h1 {
+    font-size: 5rem;
+    background-color: #fe3b6f;
+    background-image: linear-gradient(to top #ff087b 0%, #ed1e52 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-transform: uppercase;
+    margin-bottom: 25px;
 }
 
 .signup-content h2 {
@@ -499,4 +501,42 @@ a .about-btn {
     margin: 1rem 0;
     font-size: 1.5rem;
     color: #fff;
+}
+
+.signup-btn {
+    font-size: 1.2rem;
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    padding: 20px 60px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 0;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+    margin-right: 0;
+}
+
+.signup-btn::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+.signup-btn:hover::after {
+    width: 100%;
+    z-index: -1;
+}
+
+a .signup-btn {
+    position: relative;
+    z-index: 1;
+    color: #000;
 }
