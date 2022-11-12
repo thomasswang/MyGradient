@@ -56,7 +56,6 @@ button {
     font-size: 3rem;
     font-weight: bold;
     margin-right: auto;
-    margin-left: 5%;
 }
 
 .signup-btn {
@@ -95,6 +94,13 @@ a .signup-btn {
     position: relative;
     z-index: 1;
     color: #000;
+}
+
+/* responsive navbar */
+@media screen and (max-width: 1000px) {
+    nav {
+        display: none;
+    }
 }
 
 /* home */
