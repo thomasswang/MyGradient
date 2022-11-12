@@ -207,21 +207,20 @@ a .signup-btn {
 /* home */
 .home {
     height: 100vh;
-    background-color: #000;
     width: 100%;
+    background-color: #000;
 }
 
 .home-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-items: center;
-}
-
-.home-heading {
-    margin-top: 18vh;
     text-align: center;
-    font-size: 7vw;
+    justify-items: center;
+    padding-top: 18vh;
+}
+.home-heading {
+    text-align: center;
+    font-size: 9vw;
     color: #fff;
 }
 
@@ -237,7 +236,7 @@ a .signup-btn {
 }
 
 .home-desc {
-    font-size: 60px;
+    font-size: 5vw;
     background: #da22ff; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #9114ff, #da22ff); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #8f0eff, #da22ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -253,7 +252,7 @@ a .signup-btn {
 }
 
 .explore {
-    font-size: 1.8rem;
+    font-size: 2vw;
     background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
     background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
     padding: 30px 100px;
@@ -264,7 +263,6 @@ a .signup-btn {
     position: relative;
     transition: all 0.35s;
     outline: none;
-    margin-right: 2.6rem;
 }
 
 .explore::after {
