@@ -57,9 +57,10 @@ button {
     background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 3rem;
+    font-size: 5vw;
     font-weight: bold;
     margin-right: auto;
+    margin-left: 30px;
 }
 
 .signup-btn {
@@ -101,7 +102,7 @@ a .signup-btn {
 }
 
 /* responsive navbar */
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1117px) {
     .toggle {
         display: block;
         position: relative;
@@ -207,7 +208,7 @@ a .signup-btn {
 /* home */
 .home {
     height: 100vh;
-    width: 100%;
+    max-width: 100%;
     background-color: #000;
 }
 
@@ -255,7 +256,8 @@ a .signup-btn {
     font-size: 2vw;
     background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
     background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    padding: 30px 100px;
+    padding: 5vh 16vh;
+    /* 3 dan 10 */
     border: none;
     border-radius: 4px;
     margin-top: 0;
