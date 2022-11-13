@@ -210,19 +210,23 @@ a .signup-btn {
     height: 100vh;
     max-width: 100%;
     background-color: #000;
+    padding-top: 18vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .home-container {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-items: center;
-    padding-top: 18vh;
+    justify-content: center;
+    align-items: center;
 }
 .home-heading {
     text-align: center;
-    font-size: 9vw;
+    font-size: 7rem;
     color: #fff;
+    margin-bottom: 25px;
 }
 
 .home-heading span {
@@ -237,7 +241,7 @@ a .signup-btn {
 }
 
 .home-desc {
-    font-size: 5vw;
+    font-size: 3rem;
     background: #da22ff; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #9114ff, #da22ff); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #8f0eff, #da22ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -246,6 +250,7 @@ a .signup-btn {
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    margin-bottom: 25px;
 }
 
 .highlight {
@@ -253,11 +258,10 @@ a .signup-btn {
 }
 
 .explore {
-    font-size: 2vw;
+    font-size: 1.8rem;
     background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
     background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    padding: 5vh 16vh;
-    /* 3 dan 10 */
+    padding: 30px 100px;
     border: none;
     border-radius: 4px;
     margin-top: 0;
@@ -293,7 +297,6 @@ a .explore {
 /* about */
 .about {
     height: 100vh;
-    background-color: blue;
     width: 100%;
     padding-top: 18vh;
     background-color: #000;
