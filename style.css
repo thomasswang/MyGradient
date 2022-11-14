@@ -205,7 +205,7 @@ a .signup-btn {
     }
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 640px) {
     .logo {
         font-size: 3rem;
     }
@@ -257,6 +257,7 @@ a .signup-btn {
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 .highlight {
@@ -301,9 +302,25 @@ a .explore {
 }
 
 /* responsive home*/
+
 @media screen and (max-width: 1200px) {
     .menu li a {
         transform: scale(1.3);
+    }
+}
+@media screen and (max-width: 1000px) {
+    .home-container {
+    }
+    .home-heading {
+        font-size: 10rem;
+        margin-bottom: 4vh;
+    }
+    .home-desc {
+        font-size: 5rem;
+        margin-bottom: 3.5vh;
+    }
+    .explore {
+        transform: scale(1.5);
     }
 }
 
@@ -321,15 +338,16 @@ a .explore {
     background-color: #000;
 }
 
-.about-container ul {
+.about-container {
     height: 82vh;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .about-img-card {
+    margin-right: 35px;
     height: 350px;
     width: 350px;
     border-radius: 4px;
@@ -343,9 +361,11 @@ a .explore {
 }
 
 .about-content {
-    text-align: center;
+    margin-left: 35px;
     display: flex;
     flex-direction: column;
+    text-align: center;
+    justify-content: center;
 }
 
 .about-content h1 {
@@ -418,16 +438,25 @@ a .about-btn {
 }
 
 /* responsive about */
-@media screen and (max-width: 1007px) {
-    .about-img-card,
-    .about-img-card i,
-    .about-content {
-        transform: scale(0.7);
+@media screen and (max-width: 1000px) {
+    .about-container {
+        flex-direction: column;
+        transform: scale(1.3);
+    }
+
+    .about-img-card {
+        margin-right: 0;
+        margin-bottom: 70px;
     }
 
     .about-content {
-        margin: 0;
-        padding: 0;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .about-container {
+        transform: scale(1);
     }
 }
 
