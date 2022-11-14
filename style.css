@@ -11,7 +11,7 @@ header {
     padding: 20px;
     height: 18vh;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -211,6 +211,13 @@ a .signup-btn {
     }
 }
 
+@media screen and (max-width: 540px) {
+    .logo {
+        font-size: 2rem;
+        margin-left: 15px;
+    }
+}
+
 /* home section */
 .home {
     height: 100vh;
@@ -308,9 +315,8 @@ a .explore {
         transform: scale(1.3);
     }
 }
+
 @media screen and (max-width: 1000px) {
-    .home-container {
-    }
     .home-heading {
         font-size: 10rem;
         margin-bottom: 4vh;
@@ -324,7 +330,7 @@ a .explore {
     }
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (min-width: 690px) {
     .home-container {
         transform: scale(0.8);
     }
@@ -770,6 +776,7 @@ a .signup-btn {
     cursor: pointer;
     color: #fff;
     margin-bottom: 6px;
+    text-align: center;
 }
 
 .footer-container ul h2 {
