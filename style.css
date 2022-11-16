@@ -204,6 +204,15 @@ a .signup-btn {
     }
 }
 
+@media screen and (max-width: 780px) {
+    .menu {
+        width: 250px;
+    }
+    .toggle input:checked ~ ul {
+        left: -245px;
+    }
+}
+
 /* home section */
 .home {
     height: 100vh;
@@ -518,6 +527,7 @@ a .about-btn {
 }
 
 .services-container h1 {
+    text-align: center;
     background-color: #ff8177;
     background-image: linear-gradient(to right, #ff0844 0%, #f7673c 100%);
     background-size: 100%;
@@ -535,6 +545,19 @@ a .about-btn {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.services-wrapper a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+}
+
+.services-wrapper a {
+    flex: 0%;
+    margin-bottom: 10px;
 }
 
 .services-wrapper h2 {
@@ -555,8 +578,8 @@ a .about-btn {
 
 .services-card1 {
     margin: 10px;
-    height: 300px;
-    width: 250px;
+    height: 250px;
+    width: 200px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -569,8 +592,8 @@ a .about-btn {
 
 .services-card2 {
     margin: 10px;
-    height: 300px;
-    width: 250px;
+    height: 250px;
+    width: 200px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -585,8 +608,8 @@ a .about-btn {
 
 .services-card3 {
     margin: 10px;
-    height: 300px;
-    width: 250px;
+    height: 250px;
+    width: 200px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -599,8 +622,8 @@ a .about-btn {
 }
 .services-card4 {
     margin: 10px;
-    height: 300px;
-    width: 250px;
+    height: 250px;
+    width: 200px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -643,6 +666,101 @@ a .about-btn {
     transition: 0.3s ease-in;
     transform: scale(1.075);
     cursor: pointer;
+}
+
+/* responsive services */
+@media screen and (max-width: 900px) {
+    .services-wrapper a {
+        flex: 35%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .services-container {
+        transform: scale(0.8);
+    }
+
+    .services-container h1 {
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .services-card1 {
+        height: 200px;
+        width: 150px;
+    }
+    .services-card2 {
+        height: 200px;
+        width: 150px;
+    }
+
+    .services-card3 {
+        height: 200px;
+        width: 150px;
+    }
+    .services-card4 {
+        height: 200px;
+        width: 150px;
+    }
+
+    .services-wrapper h2 {
+        margin-bottom: 10px;
+    }
+
+    .services-wrapper p {
+        margin-top: 0;
+    }
+
+    .services-wrapper button {
+        margin-top: 20px;
+        height: 25px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .services-wrapper a {
+        flex: 0%;
+    }
+
+    .services-container h1 {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .services-card1 {
+        height: 180px;
+        width: 120px;
+    }
+    .services-card2 {
+        height: 180px;
+        width: 120px;
+    }
+
+    .services-card3 {
+        height: 180px;
+        width: 120px;
+    }
+    .services-card4 {
+        height: 180px;
+        width: 120px;
+    }
+
+    .services-wrapper h2 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+
+    .services-wrapper p {
+        font-size: 1rem;
+        margin-top: 0;
+    }
+
+    .services-wrapper button {
+        margin-top: 20px;
+        height: 25px;
+        width: 100px;
+    }
 }
 
 /* sign up section */
@@ -777,10 +895,33 @@ a .signup-btn {
     }
 }
 
+@media screen and (max-width: 740px) {
+    .signup-img-card {
+        height: 250px;
+        width: 250px;
+        font-size: 2.5rem;
+        margin-bottom: 100px;
+    }
+
+    .signup-content h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    .signup-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .signup-content p {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+}
+
 /* Footer */
 .footer-container {
     padding-top: 18vh;
-    padding-bottom: 20vh;
+    padding-bottom: 50px;
     background-color: #000;
     display: flex;
     flex-wrap: wrap;
@@ -798,20 +939,18 @@ a .signup-btn {
 
 .footer-container > ul {
     flex: 0%;
-    box-shadow: 0 0 0 1px black;
     margin-bottom: 10px;
 }
 
 .footer-container ul a {
     text-decoration: none;
     cursor: pointer;
-    color: #fff;
+    color: rgb(177, 177, 177);
     margin-bottom: 6px;
     text-align: center;
 }
 
 .footer-container ul h2 {
-    margin-bottom: 12px;
     font-weight: bold;
     font-size: 30px;
     text-align: center;
@@ -825,6 +964,16 @@ a .signup-btn {
 
     .footer-container ul {
         margin: 50px 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer-container ul h2 {
+        font-size: 1rem;
+    }
+
+    .footer-container ul a {
+        font-size: 0.8rem;
     }
 }
 
@@ -843,10 +992,12 @@ a .signup-btn {
 
 .social-icons {
     font-size: 1.8rem;
+    text-align: center;
 }
 
 #website-rights {
     margin-right: 40px;
+    text-align: center;
 }
 
 .social-icon-link {
@@ -858,4 +1009,11 @@ a .signup-btn {
     color: #8f0eff;
     transition: all 0.3s ease-in;
     cursor: pointer;
+}
+
+/* responsive footer final */
+@media screen and (max-height: 800px) {
+    #website-rights {
+        margin-right: 20px;
+    }
 }
