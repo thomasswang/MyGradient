@@ -358,6 +358,8 @@ a .explore {
     height: 100vh;
     padding-top: 15vh;
     background-color: #000;
+    display: flex;
+    justify-content: center;
 }
 
 .about-container {
@@ -767,6 +769,8 @@ a .about-btn {
     height: 100vh;
     padding-top: 15vh;
     background-color: #000;
+    display: flex;
+    justify-content: center;
 }
 
 .signup-container {
