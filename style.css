@@ -50,6 +50,10 @@ button {
     background-color: transparent;
 }
 
+.logo-container a {
+    text-decoration: none;
+}
+
 .logo {
     cursor: pointer;
     font-family: "Poppins", sans-serif;
